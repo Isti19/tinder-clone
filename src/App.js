@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './Header';
+import TinderCards from './TinderCards';
+import SwipeButtons from './SwipeButtons';
+import ReplayIcon from '@material-ui/icons/Replay';
+import CloseIcon from '@material-ui/icons/Close';
+import StarRate from '@material-ui/icons/StarRate';
+import FavoriteIcon from '@material-ui/icons/Favorite';
+import FlashOnIcon from '@material-ui/icons/FlashOn';
+import IconButton from '@material-ui/core/IconButton';
 
 function App() {
   return (
+    // BEM class naming convention
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <TinderCards />
+      <SwipeButtons />
     </div>
   );
 }
